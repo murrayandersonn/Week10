@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murray Anderson Week 10</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <!--Input form for inputting information to the table. Each div has "form-group" to make it all spaced nicely-->
+    <form style="width: 500px; padding: 20px;">
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" class="form-control" id="fname" name="fname">
+        <br>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" class="form-control" id="lname" name="lname">
+        <br>
+      </div>
+      <div class="form-group">
+        <label for="hobby">Hobby:  </label>
+        <input type="text" class="form-control" id="hobby" name="hobby">
+        <br>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="form-control btn btn-primary" id="button" value="Submit">
+        <br>
+      </div>
+    </form>
+    <div style="padding: 20px;">
+      <!--Table that our new HTML elements will be appended to-->
+        <table class="table table-bordered" style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Hobby</th>
+                    <th style="color: white;">#######</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>Sports</td>
+                </tr>
+            </tbody>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
